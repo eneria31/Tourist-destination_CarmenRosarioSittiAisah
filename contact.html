@@ -1,104 +1,156 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Palawan - Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#F0F4C3">
+<body>
 
-    <header>
-        <center>
-            <h1>CONTACT US</h1>
-            <p>We would love to hear from you!</p>
-        </center>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">EXPLORE <span>PALAWAN</span></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
     </header>
 
-    <hr>
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <p class="contact-label">LET'S CONNECT</p>
+        <h1>CONTACT <span>US</span></h1>
+        <p>We would love to hear from you!</p>
+    </section>
 
-    <nav>
-        <center>
-            <a href="index.html">Home</a>&nbsp;|
-            <a href="about.html">About</a>&nbsp; |
-            <a href="gallery.html">Gallery</a>&nbsp; |
-            <a href="contact.html">Contact</a>
-        </center>
-    </nav>
+    <main class="contact-main">
 
-    <hr>
-
-    <main>
-        <center>
-            <h2>Get in Touch</h2>
+        <!-- Introduction -->
+        <section class="contact-intro">
+            <p class="contact-label">WE ARE HERE TO HELP</p>
+            <h2>Get in <span>Touch</span></h2>
 
             <p>
                 Do you want to know more about our featured
                 tourist destinations? Contact us!
             </p>
+        </section>
 
-            <h3>Contact Information</h3>
+        <!-- Contact Information -->
+        <section class="contact-information">
+            <h2>Contact Information</h2>
 
-            <p><b>Website:</b> Explore Palawan</p>
+            <div class="contact-info-item">
+                <div class="contact-icon">W</div>
+                <div>
+                    <h3>Website</h3>
+                    <p>Explore Palawan</p>
+                </div>
+            </div>
 
-            <p>
-                <b>Phone:</b>
-                <a href="tel:09123456789">09123456789</a>
-            </p>
+            <div class="contact-info-item">
+                <div class="contact-icon">P</div>
+                <div>
+                    <h3>Phone</h3>
+                    <p>
+                        <a href="tel:09123456789">09123456789</a>
+                    </p>
+                </div>
+            </div>
 
-            <p>
-                <b>Location:</b> Palawan, Philippines
-            </p>
+            <div class="contact-info-item">
+                <div class="contact-icon">L</div>
+                <div>
+                    <h3>Location</h3>
+                    <p>Palawan, Philippines</p>
+                </div>
+            </div>
+        </section>
 
-            <hr>
+        <!-- Contact Form -->
+        <section class="contact-form-section">
 
-            <h2>Send Us a Message</h2>
+            <div class="form-heading">
+                <p class="contact-label">SEND YOUR INQUIRY</p>
+                <h2>Send Us a Message</h2>
+                <p>We are happy to hear your thoughts and questions.</p>
+            </div>
 
-            <form action="#" method="get">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name"
-                       placeholder="Enter your name" required>
-                <br><br>
+            <form class="contact-form" action="#" method="get">
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
-                <br><br>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required>
+                </div>
 
-                <label for="destination">Favorite Destination:</label><br>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
 
-                <select id="destination" name="destination">
-                    <option value="El Nido">El Nido</option>
-                    <option value="Coron">Coron</option>
-                    <option value="balabac">balabac</option>
-                    <option value="Other">Other</option>
-                </select>
+                <div class="form-group">
+                    <label for="destination">Favorite Destination:</label>
 
-                <br>
+                    <select id="destination" name="destination" required>
+                        <option value="" disabled selected>
+                            Select your favorite destination
+                        </option>
+                        <option value="El Nido">El Nido</option>
+                        <option value="Coron">Coron</option>
+                        <option value="Balabac">Balabac</option>
+                        <option value="Puerto Princesa">Puerto Princesa</option>
+                        <option value="San Vicente">San Vicente</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
 
-                <label for="message">Your Message:</label><br>
-                <textarea id="message" name="message"
-                          rows="5" cols="35"
-                          placeholder="Write your message here"></textarea>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
 
-                <br><br>
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Write your message here"
+                              required></textarea>
+                </div>
 
-                <input type="submit" value="Send Message">
-                <input type="reset" value="Clear">
+                <div class="form-buttons">
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear">
+                </div>
+
             </form>
+        </section>
 
+        <!-- Thank You -->
+        <section class="contact-thankyou">
+            <h2>Thank You!</h2>
             <p>
                 <mark>Thank you for visiting Explore Palawan!</mark>
             </p>
-        </center>
+        </section>
+
     </main>
 
-    <hr>
-
-    <footer>
-        <center>
-            <p>&copy; 2026 Explore Palawan</p>
-            <p>Discover the beauty. Protect nature. Enjoy the journey.</p>
-        </center>
+    <!-- Footer -->
+    <footer class="footer">
+        <h3>EXPLORE PALAWAN</h3>
+        <p>&copy; 2026 Explore Palawan</p>
+        <p>Discover the beauty. Protect nature. Enjoy the journey.</p>
     </footer>
 
 </body>
